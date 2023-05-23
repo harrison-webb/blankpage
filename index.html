@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="https://github.com/harrison-webb" />
+    <title>blankpage.page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>"
+    />
+  </head>
+  <body>
+    <div id="toolbar" class="toolbar-text">
+      <select id="font-select">
+        <option value="Arial">arial</option>
+        <option value="Courier New">courier new</option>
+        <option value="Georgia">georgia</option>
+        <option value="Times New Roman">times new roman</option>
+      </select>
+      <div id="color-scheme">
+        <span>color scheme: </span>
+        <div class="color-circle light-mode"></div>
+        <div class="color-circle sepia-mode"></div>
+        <div class="color-circle dark-mode"></div>
+      </div>
+
+      <div class="button-container">
+        <button id="download-txt">save as .txt</button>
+        <button id="download-md">save as .md</button>
+      </div>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

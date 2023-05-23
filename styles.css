@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: #fffcfc;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+#font-select {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #f49fa6;
+  color: #fff;
+  cursor: pointer;
+  appearance: none; /* This line is key to customize the dropdown, but it is not supported in all browsers */
+  -webkit-appearance: none; /* Needed for Safari */
+  -moz-appearance: none; /* Needed for Firefox */
+  outline: none; /* Removes focus outline */
+}
+
+#color-scheme {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#editor {
+  flex-grow: 1;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 5vh;
+  overflow: auto;
+  outline: none;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+
+#download-txt {
+  background: #4fdac0;
+}
+
+#download-md {
+  background: #73aff3;
+}
+
+.color-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.light-mode {
+  background: #fffcfc;
+  border: 0.5px solid #5d5d5d;
+}
+
+.sepia-mode {
+  background: #fffac4;
+  border: 0.5px solid #5d5d5d;
+}
+
+.dark-mode {
+  background: #000;
+  border: 0.5px solid #5d5d5d;
+}
+
+.toolbar-text {
+  color: #000;
+}
