@@ -89,3 +89,36 @@ button {
 .toolbar-text {
   color: #000;
 }
+
+@media (max-width: 768px) {
+  #toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #font-select,
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #editor {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #color-scheme {
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .color-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  button,
+  #font-select {
+    font-size: 16px; /* increase font size for better readability on small screens */
+  }
+}
